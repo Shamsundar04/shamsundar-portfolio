@@ -1,0 +1,66 @@
+.about-section {
+  padding: 6rem 5%;
+  background-color: #1a1a1a; /* A slightly different dark shade */
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto; /* Center the content */
+  display: flex;
+  flex-wrap: wrap; /* Allows columns to stack on smaller screens */
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.about-text {
+  flex: 2; /* Takes up 2/3 of the space */
+  min-width: 300px;
+}
+
+.about-skills {
+  flex: 1; /* Takes up 1/3 of the space */
+  min-width: 300px;
+}
+
+.about-text h2,
+.about-skills h3 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+/* Creates a decorative underline */
+.about-text h2::after,
+.about-skills h3::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #b3b3b3;
+  margin-bottom: 1.5rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skills-list li {
+  background-color: #333333;
+  color: #e0e0e0;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}

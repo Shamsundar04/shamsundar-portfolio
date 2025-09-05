@@ -1,0 +1,93 @@
+.projects-section {
+  padding: 6rem 5%;
+  background-color: #121212; /* Match the dark theme */
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projects-container h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+}
+
+.projects-container h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.projects-grid {
+  display: grid;
+  /* Creates responsive columns */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #1a1a1a;
+  border: 1px solid #2c2c2c;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  color: #b3b3b3;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  min-height: 100px; /* Ensures cards have a similar height */
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+  background-color: #333;
+  color: #e0e0e0;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.project-links a {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-links a:hover {
+  background-color: #ffffff;
+  color: #121212;
+}

@@ -1,0 +1,56 @@
+/* 1. Import a clean, modern font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+
+/* 2. Set up global styles and a dark theme */
+main {
+  /* This pushes all content down to account for the fixed navbar */
+  padding-top: 80px;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #121212; /* A dark, modern background */
+  color: #e0e0e0; /* A soft white for default text */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 3. Use the main App container to center our content */
+.App {
+  text-align: center;
+}
+
+/* 4. Style the homepage container */
+.homepage {
+  max-width: 900px; /* Stops the text from stretching too wide */
+  animation: fadeIn 1.5s ease-in-out; /* A subtle fade-in effect */
+}
+
+/* 5. Style the main headline */
+.homepage h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem); /* Responsive font size */
+  font-weight: 600;
+  color: #ffffff; /* Pure white for emphasis */
+  margin-bottom: 1rem;
+}
+
+/* 6. Style the introductory paragraph */
+.homepage p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem); /* Responsive font size */
+  font-weight: 300;
+  line-height: 1.6; /* Makes the text easier to read */
+  color: #b3b3b3; /* A slightly dimmer white */
+}
+
+/* 7. Define the keyframe animation for the fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

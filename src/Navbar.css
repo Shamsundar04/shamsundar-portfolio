@@ -1,0 +1,92 @@
+/* --- Desktop Navbar Styles (Existing) --- */
+/* --- Desktop Navbar Styles (Existing) --- */
+.navbar {
+  box-sizing: border-box; /* <-- Add this line */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background-color: rgba(26, 26, 26, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo a {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.navbar-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 300;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-links a:hover {
+  color: #ffffff;
+}
+
+/* --- Hamburger Icon (Hidden on Desktop) --- */
+.menu-icon {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-icon span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* --- Mobile Responsive Styles --- */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex; /* Show hamburger on screens 768px or less */
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 100%; /* Position below the navbar */
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 1rem 0;
+
+    /* Hide the menu off-screen */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .navbar-links.active {
+    max-height: 300px; /* Reveal the menu */
+    border-top: 1px solid #333;
+  }
+
+  .navbar-links li {
+    padding: 1rem 0;
+  }
+}

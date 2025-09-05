@@ -1,0 +1,63 @@
+.contact-section {
+  padding: 6rem 5%;
+  background-color: #1a1a1a; /* Match the "About" section background */
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-container h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.contact-container h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.contact-container p {
+  color: #b3b3b3;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  /* Centers the paragraph block */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* Allows buttons to stack on small screens */
+}
+
+.contact-button {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 0.8rem 2.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #ffffff;
+  color: #121212;
+}
