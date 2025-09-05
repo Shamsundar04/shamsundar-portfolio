@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <a href="#home">Your Name</a>
+        <a href="#home">Shamsundar Chapakanade</a>
       </div>
       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
         {/* These spans will create the hamburger icon lines */}
